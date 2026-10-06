@@ -1,0 +1,7 @@
+node_modules
+.env
+logs
+/tmp
+coverage
+.DS_Store
+outputs

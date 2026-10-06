@@ -1,0 +1,22 @@
+{
+  "name": "flaynity-gpu-server",
+  "version": "1.0.0",
+  "description": "GPU/CPU HLS transcoding server for Flaynity video platform",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "lint": "node --check src/index.js && node --check src/config.js && node --check src/jobQueue.js && node --check src/ffmpeg.js && node --check src/r2.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.699.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "ffmpeg-static": "^5.2.0",
+    "uuid": "^11.0.0"
+  }
+}
